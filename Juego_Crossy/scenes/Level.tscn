@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://player001" path="res://scenes/Player.tscn" id="2_player"]
 [ext_resource type="PackedScene" uid="uid://npc001" path="res://scenes/NPC.tscn" id="3_npc"]
 [ext_resource type="PackedScene" uid="uid://hud001" path="res://scenes/HUD.tscn" id="4_hud"]
+[ext_resource type="PackedScene" uid="uid://collectible001" path="res://scenes/Collectible.tscn" id="5_col"]
 
 [sub_resource type="ProceduralSkyMaterial" id="Sky_mat"]
 sky_top_color = Color(0.4, 0.7, 1, 1)
@@ -37,6 +38,8 @@ albedo_color = Color(0.55, 0.52, 0.45, 1)
 
 [node name="Level" type="Node3D" unique_id=1142520133]
 script = ExtResource("1_level")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1299146853]
 environment = SubResource("Env_001")
@@ -93,3 +96,23 @@ color_material = Color(1, 0.65, 0, 1)
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1848030129]
 transform = Transform3D(0.6467898, -0.46110862, 0.60748816, 0, 0.7965299, 0.6045991, -0.7626684, -0.39104855, 0.5151874, 17.316154, 17.526926, 15.743838)
 fov = 25.1
+
+[node name="Collectibles" type="Node3D" parent="."]
+
+[node name="Coin1" parent="Collectibles" instance=ExtResource("5_col")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.5, 0)
+
+[node name="Coin2" parent="Collectibles" instance=ExtResource("5_col")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 2)
+
+[node name="Coin3" parent="Collectibles" instance=ExtResource("5_col")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.5, -2)
+
+[node name="Coin4" parent="Collectibles" instance=ExtResource("5_col")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -6)
+
+[node name="Coin5" parent="Collectibles" instance=ExtResource("5_col")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, 6)
+
+[node name="Coin6" parent="Collectibles" instance=ExtResource("5_col")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 1)
