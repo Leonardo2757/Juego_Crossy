@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://player001"]
+
+[ext_resource type="Script" uid="uid://csr4xbyl6kf5v" path="res://scripts/player.gd" id="1_player"]
+[ext_resource type="PackedScene" uid="uid://chvw54igcjcgt" path="res://models/personaje crossy Road.glb" id="2_v6fml"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_player"]
+size = Vector3(1.11, 1.375, 1.42)
+
+[node name="Player" type="CharacterBody3D" unique_id=2139312639]
+script = ExtResource("1_player")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=570547213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+
+[node name="personaje crossy Road" parent="MeshInstance3D" unique_id=1214551691 instance=ExtResource("2_v6fml")]
+transform = Transform3D(-1.0272176e-08, 0, 0.235, 0, 0.235, 0, -0.235, 0, -1.0272176e-08, -0.01, -0.205, -0.485)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1967460204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+shape = SubResource("BoxShape3D_player")

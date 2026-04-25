@@ -1,0 +1,18 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1777138724
+icon.svg::CompressedTexture2D::9127929156064128886::1777160168::1777138724::1::::<><><>0<>0<>7bad01718a685164ebb6fc301702cb62<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1777160188::0::1::::<><><>0<>0<><>::
+::res://models/::1777138976
+LEEME.txt::TextFile::-1::1777160194::0::1::::<><><>0<>0<><>::
+personaje crossy Road.glb::PackedScene::5308906089156924175::1776538146::1777138989::1::::<><><>0<>0<>e0cd840101241e44486760e870cdeb9d<>res://.godot/imported/personaje crossy Road.glb-ad5ef1e862e01ae082d896576e5075a1.scn::
+::res://scenes/::1777138765
+HUD.tscn::PackedScene::344922376::1777160146::0::1::::<><><>0<>0<><>::res://scripts/hud.gd
+Level.tscn::PackedScene::584896020616::1777138765::0::1::::<><><>0<>0<><>::uid://3bhs4pvoeyii::::res://scripts/level.gd<>uid://player001::::res://scenes/Player.tscn<>uid://npc001::::res://scenes/NPC.tscn<>uid://hud001::::res://scenes/HUD.tscn
+NPC.tscn::PackedScene::610813936::1777160138::0::1::::<><><>0<>0<><>::res://scripts/npc.gd
+Player.tscn::PackedScene::27365761918488::1777160130::0::1::::<><><>0<>0<><>::res://scripts/player.gd
+::res://scripts/::1777138724
+hud.gd::GDScript::3904386471705360043::1777160120::0::1::::<>CanvasLayer<><>0<>0<><>::
+level.gd::GDScript::1967810710180878168::1777160124::0::1::::<>Node3D<><>0<>0<><>::
+npc.gd::GDScript::3301088014903379085::1777160114::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.gd::GDScript::6073136930880113349::1777160104::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://{scenes,scripts,models,screenshots}/::1777160084

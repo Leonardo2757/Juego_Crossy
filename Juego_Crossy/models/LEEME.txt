@@ -1,0 +1,20 @@
+# Carpeta models/
+
+Coloca aquí tu archivo exportado desde Blender:
+
+1. Exporta desde Blender: File → Export → glTF 2.0
+   - Marca "Apply Modifiers"
+   - Marca "Include Custom Properties"
+   - Los materiales Principled BSDF se exportan correctamente
+
+2. Copia el archivo `.gltf` (y la carpeta de texturas `.bin` si existe) aquí.
+
+3. Godot 4 lo importará automáticamente.
+
+4. Para usarlo como jugador:
+   - Abre scenes/Player.tscn
+   - Arrastra tu .gltf desde el FileSystem al nodo Player
+   - Reemplaza o convierte el MeshInstance3D placeholder
+
+5. Para los NPCs, puedes usar el mismo modelo con color_material distinto
+   (el script npc.gd aplica un color único a cada instancia vía material_override).
